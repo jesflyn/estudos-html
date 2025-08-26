@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=padding, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border: 0;
+            box-sizing: border-box;
+        }
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+        table td, table th{
+            border:1px solid;
+            padding: 8px;
+            text-align:center
+        }
+
+        table caption {
+            font-weight: bold;
+            margin: 0;
+            font-size: 18px;
+        }
+        tfoot td, table th{
+            background: rgba(0, 0, 0, 0.1);
+        }
+        .expancao-tabela {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="expancao-tabela">
+        <table>
+            <caption><b>Tabela de Exemplo</b></caption>
+            <thead>
+            <tr>
+                <th>coluna 1</th>
+                <th>coluna 2</th>
+                <th>coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>preço 1preço 1preço 1preço 1preço 1preço 1preço 1preço 1preço 1</td>
+                <td>preço 2</td>
+                <td>preço 3</td>
+            </tr>
+            <tr>
+                <td>preço 1</td>
+                <td>preço 2</td>
+                <td>preço 3</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="2" rowspan="3"></td>
+                <td rowspan="">TOTAL: R$ 219,23</td>
+            </tr>
+            
+        </tfoot>
+         <tr>
+            <td>preço 1</td>
+                <td>preço 2</td>
+                <td>preço 3</td>
+            </tr>
+    </table>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+</html>
